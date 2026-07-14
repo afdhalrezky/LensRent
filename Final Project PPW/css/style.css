@@ -1,0 +1,385 @@
+/* ===========================
+   LensRent Style
+=========================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", sans-serif;
+}
+
+body {
+  background: #f5f5f5;
+  color: #333;
+}
+
+/* Navbar */
+
+.navbar {
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+.navbar-brand {
+  font-size: 28px;
+}
+
+.nav-link {
+  font-size: 17px;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  color: #ffc107 !important;
+}
+
+/* Hero */
+
+.hero {
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.65), rgba(0, 0, 0, 0.65)),
+    url("../images/hero.jpg");
+
+  background-size: cover;
+  background-position: center;
+
+  min-height: 90vh;
+
+  display: flex;
+
+  align-items: center;
+
+  color: white;
+}
+
+.hero h1 {
+  font-size: 60px;
+  margin-bottom: 20px;
+}
+
+.hero p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.hero-img {
+  width: 100%;
+  max-width: 550px;
+
+  animation: zoom 3s infinite alternate;
+}
+
+@keyframes zoom {
+  from {
+    transform: scale(0.95);
+  }
+
+  to {
+    transform: scale(1);
+  }
+}
+
+/* Button */
+
+.btn {
+  border-radius: 30px;
+}
+
+/* Card */
+
+.card {
+  border: none;
+
+  border-radius: 15px;
+
+  overflow: hidden;
+
+  transition: 0.4s;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+  height: 220px;
+
+  object-fit: cover;
+}
+
+/* Section */
+
+section {
+  padding-top: 70px;
+  padding-bottom: 70px;
+}
+
+h2 {
+  font-weight: bold;
+
+  margin-bottom: 40px;
+}
+
+/* Footer */
+
+footer {
+  margin-top: 40px;
+}
+
+/* Table */
+
+table {
+  background: white;
+
+  border-radius: 10px;
+
+  overflow: hidden;
+}
+
+/* Form */
+
+.form-control {
+  border-radius: 12px;
+
+  padding: 12px;
+}
+
+textarea {
+  resize: none;
+}
+
+/* Detail Kamera */
+
+.detail-img {
+  width: 100%;
+
+  border-radius: 15px;
+
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
+}
+
+.price {
+  font-size: 32px;
+
+  font-weight: bold;
+
+  color: #dc3545;
+}
+
+/* Feature Box */
+
+.feature {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 15px;
+
+  text-align: center;
+
+  transition: 0.4s;
+}
+
+.feature:hover {
+  background: #212529;
+
+  color: white;
+
+  transform: translateY(-8px);
+}
+
+/* Search */
+
+#search {
+  border-radius: 30px;
+
+  padding: 15px;
+}
+
+/* FAQ */
+
+.accordion-button {
+  font-weight: bold;
+}
+
+/* Testimoni */
+
+.testimoni {
+  background: white;
+
+  padding: 30px;
+
+  border-radius: 15px;
+
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* WhatsApp */
+
+.whatsapp {
+  position: fixed;
+
+  right: 20px;
+
+  bottom: 20px;
+
+  background: #25d366;
+
+  color: white;
+
+  width: 60px;
+
+  height: 60px;
+
+  border-radius: 50%;
+
+  display: flex;
+
+  align-items: center;
+
+  justify-content: center;
+
+  font-size: 30px;
+
+  text-decoration: none;
+
+  z-index: 999;
+
+  transition: 0.3s;
+}
+
+.whatsapp:hover {
+  background: #1ebc59;
+
+  transform: scale(1.1);
+}
+
+/* Scroll Button */
+
+#topBtn {
+  position: fixed;
+
+  bottom: 90px;
+
+  right: 20px;
+
+  display: none;
+
+  border: none;
+
+  width: 50px;
+
+  height: 50px;
+
+  border-radius: 50%;
+
+  background: #ffc107;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  z-index: 999;
+}
+
+/* Dark Mode */
+
+.dark {
+  background: #111;
+
+  color: white;
+}
+
+.dark .card {
+  background: #222;
+
+  color: white;
+}
+
+.dark footer {
+  background: black;
+}
+
+.dark .feature {
+  background: #222;
+
+  color: white;
+}
+
+/* Responsive */
+
+@media (max-width: 992px) {
+  .hero {
+    text-align: center;
+
+    padding: 60px 20px;
+  }
+
+  .hero h1 {
+    font-size: 42px;
+  }
+
+  .hero-img {
+    margin-top: 40px;
+
+    max-width: 350px;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero h1 {
+    font-size: 35px;
+  }
+
+  .hero p {
+    font-size: 18px;
+  }
+
+  .card {
+    margin-bottom: 25pxa;
+  }
+}
+/* ===========================
+   Tambahan Hiasan (Decorations)
+=========================== */
+
+/* Efek kartu melayang saat disentuh (hover) */
+.custom-card {
+  transition: all 0.3s ease;
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.custom-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1) !important;
+}
+
+/* Memastikan semua gambar kamera punya ukuran yang rapi dan seragam */
+.custom-img {
+  height: 220px;
+  object-fit: cover;
+  border-bottom: 3px solid #ffc107; /* Garis kuning khas LensRent */
+}
+
+/* Transisi pada tombol agar lebih interaktif */
+.custom-btn {
+  transition: all 0.3s ease;
+}
+
+.custom-btn:hover {
+  background-color: #ffc107;
+  color: #000;
+  border-color: #ffc107;
+}
+
+/* Jarak antar elemen grid agar tidak terlalu menempel */
+.g-4, .gy-4 {
+  --bs-gutter-y: 2rem;
+}
+.g-4, .gx-4 {
+  --bs-gutter-x: 2rem;
+}
